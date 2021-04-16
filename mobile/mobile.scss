@@ -1,0 +1,39 @@
+//define//
+$color-white: #ffffff;
+$color-black: #000000;
+$color-yellow: #f7b42c;
+$color-cream: #f0e5d8;
+$color-grey: #121212;
+$color-red: #fc575e;
+$header-gradient: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
+
+$radius-2: 2px;
+$radius-4: 4px;
+$radius-6: 6px;
+$radius-10: 10px;
+
+
+#main-outlet {
+  margin-top: 42px;
+  margin-bottom: 50px;
+  border-radius: $radius-10;
+  width: 75%;
+  max-width: 1030px;
+  padding: 3em 3em 5%;
+  padding-bottom: 5% !important;  
+  background: $secondary;
+}
+
+
+.nav-pills li a {  
+  &.active {
+    font-weight: 500;
+    color: $color-white;
+    background: none;
+    border-bottom: 2px solid $color-red;
+  }
+  &:hover {
+    background-color: $color-red;
+    color: $color-white;
+  }
+}

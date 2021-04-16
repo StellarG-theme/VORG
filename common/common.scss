@@ -1,0 +1,185 @@
+
+//define//
+$color-white: #ffffff;
+$color-black: #000000;
+$color-yellow: #f7b42c;
+$color-cream: #f0e5d8;
+$color-grey: #121212;
+$color-red: #fc575e;
+$header-gradient: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
+
+$radius-2: 2px;
+$radius-4: 4px;
+$radius-6: 6px;
+$radius-10: 10px;
+
+
+body {
+  background: url($texture-big);
+  background-attachment: fixed;
+  background-size: 1096px;
+}
+
+.d-header {
+//  background-color: $color-yellow;
+  background-image: $header-gradient;
+  height: 5em;
+}
+
+.menu-panel {
+  border-radius: $radius-6;
+  background-color: $color-grey;
+  .panel-body-bottom .btn:hover {
+    background: $color-red;
+  }
+  li a.widget-link .d-icon, .menu-panel li a.categories-link .d-icon {
+    color: $color-red;
+  }
+}
+
+#create-topic {
+  color: $color-white;
+  background-color: $color-red;
+  border-radius: $radius-2;
+  .fa {
+    color: $color-white;
+  }
+  &:hover {
+    background: $color-red;
+    color: $color-white;
+    border-radius: $radius-2;
+    box-shadow: 0 1px 8px $color-red;
+    .fa {
+      color: $color-white;
+    }
+  }
+}
+
+#main-outlet {
+  background: $secondary;
+}
+
+.btn {
+  background: $primary-low;
+  color: $color-white;
+  border-radius: $radius-6;
+  .discourse-no-touch & {
+    &:hover, 
+    &.btn-hover {
+      color: $color-white;
+      background: $color-red;
+      .d-icon {
+        color: $color-white;
+      }
+    }
+  }
+  &:hover, 
+  &.btn-hover {
+    color: $color-white;
+    background: $color-red;
+    .d-icon {
+      color: $color-red;
+    }
+  }
+  &:active, 
+  &.btn-active {
+    background-image: none;
+    background-color: $color-red;
+    color: $color-white;
+    .d-icon {
+      color: $color-white;
+    }
+  } 
+}
+
+.btn-danger {
+  background-color: $danger;
+  color: $color-white;
+  .d-icon {
+    color: $color-white;
+  }
+  &:active, 
+  &.btn-active {
+    .d-icon {
+      color: $color-white;
+    }
+  } 
+  .discourse-no-touch & {
+    &:hover, 
+    &.btn-hover {
+      background-color: $danger-hover;
+      color: $color-cream;
+      .d-icon {
+        color: $color-cream;
+      }
+    }
+  }
+}
+
+.btn-primary {
+  .d-icon {
+    color: $color-white;
+  }
+}
+
+.select-kit.dropdown-select-box .dropdown-select-box-header {
+  border: 1px solid $primary-low;
+}
+
+.modal-inner-container {
+  border-radius: $radius-4;
+}
+
+.list-controls .combo-box .combo-box-header {
+  border: 0;
+  background: none;
+}
+
+ul.nav-pills {
+  padding-left: 10px;
+}
+
+.timeline-container .topic-timeline { 
+  .timeline-scrollarea {
+    border-color: $color-cream;
+  }
+  .timeline-handle {
+    background-color: $color-cream;
+  }
+}
+
+.post-stream .names .username {
+  font-size: 1.1em;
+}
+
+.user-content {
+  background: transparent;
+}
+
+.search-container .search-advanced-sidebar {
+  .search-advanced-title {
+    background: $header-gradient;
+  }
+}
+
+.admin-controls {
+  .nav-pills>li a.active {
+    background: none;
+    color: $color-red;
+  }
+}
+
+a, .fps-result a.search-link:visited .topic-title {
+  color: $color-yellow;
+  &:hover {
+  color: $color-yellow;
+  }
+}
+
+a:visited {
+  color: $color-yellow;
+}
+
+.open .grippie {
+  background: $header-gradient;
+}
